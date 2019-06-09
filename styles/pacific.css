@@ -6,7 +6,7 @@
 header {
     background-color: #000033;
     color: #ffffff;
-    background-image: url(sunset.jpg);
+    background-image: url(images/sunset.jpg);
     background-position: right;
     background-repeat: no-repeat;
     line-height: 400%;
@@ -32,7 +32,7 @@ h3 {
     color: #000033;
 }
 ul {
-    list-style-image: url(marker.gif);
+    list-style-image: url(images/marker.gif);
 }
 footer {
     font-size: 75%;
