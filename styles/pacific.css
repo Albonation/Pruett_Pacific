@@ -1,6 +1,15 @@
 ﻿* {
     box-sizing: border-box;
 }
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+#mobile {
+    display: none;
+}
+#desktop {
+    display: inline;
+}
 body   {
     background-color: #b8dbed;
     color: #666666;
@@ -114,4 +123,91 @@ dt {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-left: 190px;
+}
+@media only screen and (max-width: 64em) {
+    body {
+        margin: 0;
+        background-color: #000033;
+    }
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+        border: none;
+    }
+    header {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: 0;
+        height: auto;
+    }
+    h1 {
+        letter-spacing: .1em;
+    }
+    main {
+        margin-left: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: .5em;
+    }
+    nav li {
+        display: inline-block;
+        padding: .25em .75em .25em .75em;
+    }
+    #homehero {
+        margin-left: 0;
+        height: 200px;
+    }
+    #yurthero {
+        margin-left: 0;
+        height: 200px;
+    }
+    #trailhero {
+        margin-left: 0;
+        height: 200px;
+    }
+    footer {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 37.5em) {
+    main {
+        padding: .1em 1em .1em 1em;
+        font-size: 90%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: solid 2px #330000;
+    }
+    nav a {
+        display: block;
+    }
+    #homehero {
+        background-image: none;
+        height: 0;
+    }
+    #yurthero {
+        background-image: none;
+        height: 0;
+    }
+    #trailhero {
+        background-image: none;
+        height: 0;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
 }
